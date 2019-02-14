@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function is_telNum(str) {
+        var regexp = /^0[0-9\s.-]{9,13}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    var telnum = prompt("Telephone number: ")
+    document.write(is_telNum(telnum));
+</script>
+</body>
+</html>
